@@ -16,3 +16,4 @@ reload
 compile
 show makeVersionProperties
 exit
+show makeVersionProperties
