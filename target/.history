@@ -59,3 +59,9 @@ reload
 common/makeVersionProperties
 exit
 common/makeVersionProperties
+name
+website/clean
+common/clean
+analytics/clean
+clean
+exit
