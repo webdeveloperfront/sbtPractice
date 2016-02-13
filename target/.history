@@ -19,3 +19,4 @@ exit
 show makeVersionProperties
 reload
 test
+show makeVersionProperties
