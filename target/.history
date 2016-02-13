@@ -55,3 +55,6 @@ exit
 name
 common/test
 exit
+reload
+common/makeVersionProperties
+exit
