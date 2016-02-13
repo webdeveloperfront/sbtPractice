@@ -42,3 +42,30 @@ makeVersionProperties := {
 
 
 resourceGenerators in Compile <+= makeVersionProperties
+
+
+// 3,5 Defining with subprojects
+// creamos el subProyecto common y le agregamos las librerias en este caso de test
+// para poder con el codigo hecho en chap2, pues ejecutar los test q estan ahora mismo en common
+lazy val common = (
+  Project("common", file("common"))
+    settings(
+      libraryDependencies ++= Seq(
+        "org.specs2" %% "specs2-core" % "3.7" % "test"
+      )
+    )
+  )
+
+
+lazy val analytics = (
+  Project("analytics", file("analytics"))
+    dependsOn(common)
+    settings()
+  )
+
+
+lazy val website = (
+  Project("website", file("website"))
+    dependsOn(common)
+    settings()
+  )

@@ -1,4 +1,4 @@
-target/resolution-cache
-target/streams
+target
 .idea
-project/target
+project
+.class

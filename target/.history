@@ -20,3 +20,13 @@ show makeVersionProperties
 reload
 test
 show makeVersionProperties
+exit
+reload
+test
+projects
+common/test
+reload
+common/test
+reload
+common/test
+reload
