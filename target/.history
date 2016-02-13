@@ -30,3 +30,5 @@ common/test
 reload
 common/test
 reload
+common/clean
+clean

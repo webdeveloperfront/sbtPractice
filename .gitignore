@@ -1,4 +1,5 @@
 target
 .idea
+
 project
-.class
+!project/build.properties
