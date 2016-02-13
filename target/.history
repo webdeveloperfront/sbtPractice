@@ -12,3 +12,6 @@ exit
 makeVersionProperties
 show gitHeadCommitSha
 show makeVersionProperties
+reload
+compile
+show makeVersionProperties
