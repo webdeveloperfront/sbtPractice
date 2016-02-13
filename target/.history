@@ -15,3 +15,4 @@ show makeVersionProperties
 reload
 compile
 show makeVersionProperties
+exit
