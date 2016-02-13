@@ -1,0 +1,14 @@
+compile
+exit
+show gitHeadCommitSha
+reload
+show gitHeadCommitSha
+reload
+compile
+show gitHeadCommitSha
+makeVersionProperties
+show makeVersionProperties
+exit
+makeVersionProperties
+show gitHeadCommitSha
+show makeVersionProperties

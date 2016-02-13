@@ -17,4 +17,25 @@ libraryDependencies ++= Seq(
 val gitHeadCommitSha = taskKey[String]("Deteerminta el commit actual de git - SHA")
 
 gitHeadCommitSha := Process("git rev-parse HEAD").lines.head
-    
+
+//si ejecutamos:
+// > show gitHeadCommitSha
+// veremos como pilla la version (commit) hecha en GitHub y la imprime
+
+val makeVersionProperties = taskKey[Seq[File]]("hacer una archivo llamado version.properties.")
+
+makeVersionProperties := {
+  val propFile = new File((resourceManaged in Compile). value, "version.properties")
+
+  val content = "version=%s" format (gitHeadCommitSha.value)
+
+  IO.write(propFile, content)
+
+  Seq(propFile)
+}
+
+//si ejecutamos:
+// > show makeVersionProperties
+// veremos que crea un archivo en la ruta:
+// ..sbtPractice/target/scala-2.11/resource_managed/main/version.properties
+// y graba la version que hace un momento lo vimos con "gitHeadCommitSha"

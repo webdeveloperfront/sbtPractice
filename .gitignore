@@ -1,3 +1,4 @@
-target
+target/resolution-cache
+target/streams
 .idea
 project/target
