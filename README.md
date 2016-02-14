@@ -1,5 +1,4 @@
 # sbtPractice
 
-Siguinendo el libro
+capitulo 5
 
---> 3.3.1. Task dependencies
