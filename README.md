@@ -1,5 +1,11 @@
 # sbtPractice
 
-Siguinendo el libro
+en este capitulo no se hace mucho referencia al proyecto ya q es mas teorico
 
---> 3.3.1. Task dependencies
+revisar en el libro los temas de :
+
+* Arranging source files
+* Dealing with dependencies (libraries)
+* Compiling Scala and Java code
+* Running individual tests
+* Packaging your code
