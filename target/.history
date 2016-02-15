@@ -117,3 +117,10 @@ clear
 exit
 last analytics/*:update
 exit
+test
+clear
+clean
+reload
+sbt test
+reload
+exit

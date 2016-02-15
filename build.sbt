@@ -13,7 +13,7 @@ def PreownedKittenProject(name: String): Project = (
       version       := "1.0",
       organization  := "com.preowned-kittens",
       libraryDependencies ++= Seq(
-        "org.specs2" %% "specs2_2.11" % "3.7" % "test",
+        "org.specs2" %% "specs2-core" % "3.7" % "test",
         "com.novocode" % "junit-interface" % "0.11" % "test"
       )
     )
