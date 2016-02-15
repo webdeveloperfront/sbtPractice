@@ -1,6 +1,35 @@
-target
-.idea
-**.class
 
-project
-!project/build.properties
+# Created by https://www.gitignore.io/api/scala
+
+### Scala ###
+*.class
+*.log
+
+# IntelliJ Idea
+*.iml
+*.ipr
+*.iws
+.idea
+out
+
+# sbt specific
+.cache
+.history
+.lib/
+dist/*
+target/
+lib_managed/
+src_managed/
+project/boot/
+project/target/
+project/project/
+project/plugins/project/
+
+# Scala-IDE specific
+.scala_dependencies
+.worksheet
+
+
+# Mac
+.DS_Store
+
