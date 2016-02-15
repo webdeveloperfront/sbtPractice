@@ -59,9 +59,18 @@ reload
 common/makeVersionProperties
 exit
 common/makeVersionProperties
+reload
+test
+reload
+test
+compile
+reload
 exit
-~test
-~testOnly *Logic*
-~testOnly org.preownedkittens.sbtLogicSpec
-:q
+name
+website/clean
+analytics/clean
+common/clean
+sbtpractice/clean
+clean
+reload
 exit
