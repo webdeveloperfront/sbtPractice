@@ -74,3 +74,46 @@ sbtpractice/clean
 clean
 reload
 exit
+reload
+test
+reload
+name
+website/clean
+analytics/clean
+common/clean
+sbtpractice/clean
+clean
+reload
+test
+website/clean
+analytics/clean
+common/clean
+sbtpractice/clean
+clean
+exit
+website/clean
+analytics/clean
+common/clean
+website/clean
+sbtpractice/clean
+clean
+exit
+reload
+sbt test
+exit
+reload
+website/clean
+analytics/clean
+common/clean
+sbtpractice/clean
+clean
+exit
+reload
+exit
+test
+analytics/*:update
+last analytics/*:update
+clear
+exit
+last analytics/*:update
+exit

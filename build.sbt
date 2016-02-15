@@ -13,7 +13,7 @@ def PreownedKittenProject(name: String): Project = (
       version       := "1.0",
       organization  := "com.preowned-kittens",
       libraryDependencies ++= Seq(
-        "org.specs2" %% "specs2-core" % "3.7" % "test",
+        "org.specs2" %% "specs2_2.11" % "3.7" % "test",
         "com.novocode" % "junit-interface" % "0.11" % "test"
       )
     )
@@ -24,13 +24,13 @@ gitHeadCommitSha in ThisBuild := Process("git rev-parse HEAD").lines.head
 lazy val common = (
   PreownedKittenProject("common")
     settings(
-      makeVersionProperties := {
-        val propFile = new File((resourceManaged in Compile). value, "version.properties")
-        val content = "version=%s" format (gitHeadCommitSha.value)
-        IO.write(propFile, content)
-        Seq(propFile)
-      },
-      resourceGenerators in Compile <+= makeVersionProperties
+    makeVersionProperties := {
+      val propFile = new File((resourceManaged in Compile). value, "version.properties")
+      val content = "version=%s" format (gitHeadCommitSha.value)
+      IO.write(propFile, content)
+      Seq(propFile)
+    },
+    resourceGenerators in Compile <+= makeVersionProperties
     )
   )
 
