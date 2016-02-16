@@ -124,3 +124,9 @@ reload
 sbt test
 reload
 exit
+reload
+test
+analytics/test
+exit
+reload
+test
