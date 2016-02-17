@@ -15,3 +15,10 @@ javaOptions in Test += "-Dspecs2.outDir=" + (target.value / "generated/test-repo
 
 fork in Test := true
 
+
+// JUNIT
+
+libraryDependencies += "junit" % "junit" % "4.11" % "test"
+
+libraryDependencies += "com.novocode" % "junit-interface" % "0.11"
+
