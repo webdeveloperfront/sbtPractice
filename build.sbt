@@ -34,13 +34,11 @@ lazy val common = (
     )
   )
 
-
 lazy val analytics = (
   PreownedKittenProject("analytics")
     dependsOn(common)
     settings()
   )
-
 
 lazy val website = (
   PreownedKittenProject("website")
