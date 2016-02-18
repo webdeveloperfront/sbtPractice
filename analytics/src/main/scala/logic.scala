@@ -7,6 +7,6 @@ object Logic {
       kitten.attributes contains attribute
     }
     val nums = matches map { b => if(b) 1.0 else 0.0 }
-    if (nums.length > 0) nums.sum / nums.length else 0.0
+    nums.sum / nums.size
   }
 }
