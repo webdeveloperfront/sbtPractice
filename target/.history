@@ -170,3 +170,8 @@ analytics/clean
 common/clean
 gitHeadCommitSha
 makeVersionProperties
+reload
+test
+analytics/clean
+reload
+test

@@ -11,9 +11,6 @@ libraryDependencies += "org.pegdown" % "pegdown" % "1.6.0" % "test"
 //esta solucion es dada por stackOverflow
 testOptions += Tests.Argument(TestFrameworks.Specs2, "html", "html.outdir", "target/generated/test-reports")
 
-//testOptions += Tests.Argument(TestFrameworks.Specs2, "html")
-//javaOptions in Test += "-Dspecs2.outDir=" + (target.value / "generated/test-reports").getAbsolutePath
-
 fork in Test := true
 
 
