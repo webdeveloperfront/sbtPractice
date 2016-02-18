@@ -17,6 +17,7 @@ testOptions += Tests.Argument(TestFrameworks.Specs2, "html", "html.outdir", "tar
 fork in Test := true
 
 
+
 // JUNIT
 
 libraryDependencies += "junit" % "junit" % "4.11" % "test"

@@ -7,7 +7,6 @@ package org.preownedkittens;
 import org.junit.*;
 import scala.collection.immutable.*;
 
-
 public class LogicJavaTest {
     @Test
     public void testKitten(){
