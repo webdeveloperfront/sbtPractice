@@ -19,5 +19,5 @@ fork in Test := true
 
 libraryDependencies += "junit" % "junit" % "4.11" % "test"
 
-libraryDependencies += "com.novocode" % "junit-interface" % "0.11"
+libraryDependencies += "com.novocode" % "junit-interface" % "0.11" % "test"
 

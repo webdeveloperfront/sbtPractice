@@ -175,3 +175,12 @@ test
 analytics/clean
 reload
 test
+analytics/clean
+test
+exit
+reload
+test
+reload
+test
+exit
+reload
