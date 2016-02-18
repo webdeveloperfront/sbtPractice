@@ -175,3 +175,7 @@ clear
 clean
 analytics/clean
 test
+reload
+analytics/clean
+test
+exit
