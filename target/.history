@@ -155,3 +155,13 @@ common/clean
 website/clean
 clean
 exit
+test
+reload
+test
+reload
+analytics/clean
+test
+analytics/clean
+test
+reload
+test
