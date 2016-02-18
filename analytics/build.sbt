@@ -16,3 +16,9 @@ testOptions += Tests.Argument(TestFrameworks.Specs2, "html", "html.outdir", "tar
 
 fork in Test := true
 
+
+// JUNIT
+
+
+// SCALA_CHECK
+
