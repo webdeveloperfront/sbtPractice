@@ -182,3 +182,16 @@ exit
 analytics/clean
 clean
 common/clean
+reload
+~test
+last analytics/*:update
+exit
+~test
+analytics/*:update
+reload
+~test
+reload
+~test
+analytics/clean
+clean
+exit

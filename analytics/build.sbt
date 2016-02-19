@@ -25,7 +25,8 @@ testOptions += Tests.Argument(TestFrameworks.JUnit, "-v", "-n", "--run-listener=
 javaOptions in Test += "-Djunit.output.file=" + (target.value / "generated/junit.html").getAbsolutePath
 
 
-
-
 // SCALA_CHECK
 
+libraryDependencies += "org.scalacheck" % "scalacheck_2.11" % "1.12.0" % "test"
+
+testOptions += Tests.Argument(TestFrameworks.ScalaCheck, "-s", "5000")
