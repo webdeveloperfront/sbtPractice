@@ -179,3 +179,6 @@ reload
 analytics/clean
 test
 exit
+analytics/clean
+clean
+common/clean
