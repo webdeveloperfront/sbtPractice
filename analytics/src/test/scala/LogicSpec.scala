@@ -34,14 +34,12 @@ object LogicSpec extends Specification {
       val prefs = BuyerPreferences(Set("male", "tabby", "tabby"))
       Logic.matchLikelihood(tabby, prefs) must beGreaterThan(0.999)
     }
-
     "be 66% when two from three attributes match" in {
       val tabby = Kitten(1, Set("female", "calico", "overweight"))
       val prefs = BuyerPreferences(Set("female", "calico", "thin"))
       val result = Logic.matchLikelihood(tabby, prefs)
       result must beBetween(0.666, 0.667)
     }
-
   }
 
 }
